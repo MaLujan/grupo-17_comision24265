@@ -1,19 +1,19 @@
+/* Importo fuentes  */
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
 
-/* universal */
-
+/* Universal */
 *{
     margin: 0;
     box-sizing: border-box;
 }
 
-/* cuerpo */
-
+/*body */
 #body-index{
     background-color: gainsboro;
 }
 
-/* encabezado */
+/* header */
+    /* nav  */
 
 #nav{
     position: fixed;
@@ -23,7 +23,8 @@
     font-size: 1.5rem;
     z-index: 5000;    
 }
-
+ 
+    /* Estilos del logo - enlace a home  */
 .logo{
     position: absolute;
     margin-left: 10%;
@@ -32,6 +33,19 @@
     z-index: 25;
 }
 
+.logo:hover{
+    padding: 2%;
+}
+
+    /* Estilo a div - nav - enlaces a paginas  */
+#nav-links{
+    display: flex;
+    justify-content: center;
+    margin-left: 65%;
+    margin-right: 30%;
+}
+
+    /* Estilos nav - enlaces a paginas  */
 .resaltar-links{
     position: relative;
     text-decoration: none;
@@ -55,29 +69,24 @@
     height: 4px;
     width:86%;
     background: white;
-    /* animacion de derecha a izquierda */
+    /* Animacion de derecha a izquierda */
     transform-origin: right;
     transform: scaleX(0);
     transition: transform 0.2s ease-in-out;
 }
 
 .resaltar-links:hover:after{
-    /* animacion de derecha a izquierda */
+    /* Animacion de derecha a izquierda */
     transform-origin: left;
     transform: scaleX(1);
 }
 
-#nav-links{
-    display: flex;
-    justify-content: center;
-    margin-left: 65%;
-    margin-right: 30%;
-}
 
 /* index  */
+/* main  */
 
-/* primera seccion */
-    /* primer div  */
+/* Primera seccion */
+/* Primer div  */
 
 .wave{
     height:54rem;
@@ -95,7 +104,7 @@
     width: 100%;
 }
 
-    /* segundo div  */
+ /* segundo div  */
 
 .seccion-principal{
     position: absolute;
@@ -107,7 +116,6 @@
 }
 
     /* h1 */
-
 .bienvenida{
     background-color: blue;
     padding: 2%;
@@ -119,13 +127,11 @@
 }
 
     /* span  */
-
 #color-text{
     color: white;
 }
 
-    /* p */
-
+     /* p */
 #text{
     color: white;
     margin-top: 3%;
@@ -137,8 +143,53 @@
     font-style: normal;
     font-variation-settings: "wdth" 100;
 }
+    /* nav - boton - sumate  */
 
-    /* tercer div  */
+.boton{
+    background-color: green;
+    box-shadow: 2px 2px darkgreen;
+    border-radius: 5px;
+    border: none;
+}
+
+.boton:hover{
+    padding: 2%;
+    background-color: blue;
+    box-shadow: 2px 2px darkblue;
+}
+
+    /* Agrego fa-brands del boton instagram para darle el mismo estilo */
+.text-boton, .fa-brands{
+    padding:3%;
+    color: white;
+    font-size: 1.2rem;
+    text-decoration: none;
+}
+
+    /* Estilo para boton sumate - contactate  */
+
+.font-boton{
+    font-size: 1.5rem;
+    font-family: "MuseoModerno", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 700;
+    font-style: normal;
+    text-decoration: none;
+    color: white;   
+}
+
+#bot-sumate{
+    display: flex;
+    justify-content: center;
+    margin-left: 75%;
+    margin-top: 2%;
+    padding-top: 1%;
+    padding-bottom: 1%;
+    width: 10%;
+    z-index: 3000;
+ }
+
+/* Tercer div  */
 
 .rectangulo-divisor{
     background-color: green;
@@ -155,7 +206,7 @@
     fill-opacity:"1";
 }
 
-/* segunda seccion */
+/* Segunda seccion */
 
 .segunda-seccion{
     position: absolute;
@@ -165,8 +216,15 @@
     justify-content: space-evenly;
 }
 
-    /* articulos */
+/* Primer div  */
 
+#primer-art{
+    margin-top: 45rem; 
+}
+
+/*Para ambos articulos*/
+
+    /* Article  */
 .art-index{
     text-align: left;
     background-color: white;
@@ -174,12 +232,14 @@
     padding:8%;
 }
 
+    /* h2  */
 .margen-art{
     margin-top: 4rem;
     padding-bottom: 2%;
     font-size: 2.5rem;
 }
 
+    /* p  */
 .art-texto{
     text-align: left;
     margin-top: 5%;
@@ -191,11 +251,9 @@
     color: gray;
  }
 
-    /* primer articulo */
+/*  Primer articulo */
 
-#primer-art{
-    margin-top: 45rem; 
-}
+    /* div imagenes  */
 
 #img-deportes{
     display: flex;
@@ -208,47 +266,7 @@
     height: auto;
 }
 
-.boton{
-    background-color: green;
-    box-shadow: 2px 2px darkgreen;
-    border-radius: 5px;
-    border: none;
-}
-
-.boton:hover{
-    padding: 2%;
-    background-color: blue;
-    box-shadow: 2px 2px darkblue;
-}
-
-.text-boton, .fa-brands{
-    padding:3%;
-    color: white;
-    font-size: 1.2rem;
-    text-decoration: none;
-}
-
-.font-boton{
-    font-size: 1.5rem;
-    font-family: "MuseoModerno", sans-serif;
-    font-optical-sizing: auto;
-    font-weight: 700;
-    font-style: normal;
-    text-decoration: none;
-    color: white;
-    
-}
-
-#bot-sumate{
-    display: flex;
-    justify-content: center;
-    margin-left: 75%;
-    margin-top: 2%;
-    padding-top: 1%;
-    padding-bottom: 1%;
-    width: 10%;
-    z-index: 3000;
- }
+    /* nav - boton - instagram  */
 
  #bot-instagram{
     margin-left: 15%;
@@ -257,11 +275,14 @@
     width:70%;
  }
 
-    /* segundo articulo */
+/* Segundo articulo */
 
+    /* div  */
 #segundo-art{
     margin-top: 58rem;  
 } 
+
+/* footer  */
 
 footer{
     position:absolute;
@@ -272,6 +293,8 @@ footer{
     z-index: 1000;    
 }
 
+/* div principal  */
+
 .canales-inf{
     background-color: darkslategrey;
     border-top: 15px solid green;
@@ -279,36 +302,7 @@ footer{
     color: white;
 }
 
-.canal-inf{
-    margin-left:10%;
-    margin-top: -5%;
-    padding: 3%;
-}
-
-.redes-icon{
-    font-size: 1.6rem;
-}
-
-.container-circle{
-    display: flex;
-    margin-top:5%;
-}
-
-.circle{
-    display: flex;
-    justify-content: center;
-    text-decoration: none;
-    border-radius: 80px;
-    background-color: cadetblue;
-    width: 4%;
-    padding:1%;
-    margin: 1%;
-    margin-bottom:10%;
-}
-
-.circle:hover{
-   background-color: darkcyan;
-}
+    /* nav - boton - contacto  */
 
 .bot-contacto{
     background-color: green;
@@ -324,8 +318,57 @@ footer{
 
 .bot-contacto:hover{
     background-color: blue;
+    box-shadow: 3px 3px darkblue;
 }
 
+/* div secundario  */
+
+.canal-inf{
+    margin-left:10%;
+    margin-top: -3%;
+}
+
+    /* h2  */
+.font-text-inf{
+    font-family: "Teko", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 700;
+    font-style: normal;
+    padding-bottom: 2%;
+}
+
+/* div tercero contenedor de iconos  */
+
+.container-circle{
+    display: flex;
+    margin-top: 7%;
+}
+
+    /* div circulo individual para cada icono  */
+
+.circle{
+    display: flex;
+    justify-content: center;
+    text-decoration: none;
+    border-radius: 80px;
+    background-color: cadetblue;
+    width: 4%;
+    padding:0.5%;
+    margin: 0.5%;
+    margin-bottom:8%;
+}
+
+.circle:hover{
+   background-color: darkcyan;
+}
+
+    /* tamaño iconos redes  */
+.redes-icon{
+    font-size: 1.6rem;
+}
+
+ /* pie de página  */
+    /* p  */
 .pie-pagina{
     color: grey;
     padding: 3%;
