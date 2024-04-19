@@ -1,0 +1,336 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+
+/* universal */
+
+*{
+    margin: 0;
+    box-sizing: border-box;
+}
+
+/* cuerpo */
+
+#body-index{
+    background-color: gainsboro;
+}
+
+/* encabezado */
+
+#nav{
+    position: fixed;
+    top: 0;
+    background-color: blue;
+    width: 100%;
+    font-size: 1.5rem;
+    z-index: 5000;    
+}
+
+.logo{
+    position: absolute;
+    margin-left: 10%;
+    padding: 1%;
+    width: 10%;
+    z-index: 25;
+}
+
+.resaltar-links{
+    position: relative;
+    text-decoration: none;
+    text-align: center;
+    color: white;
+    padding: 15%;
+    margin: 5%;
+    margin-top: 50%;
+    margin-bottom: 50%;
+    font-family: "Alegreya Sans SC", sans-serif;
+    font-weight: 100;
+    font-style: normal;
+} 
+
+.resaltar-links:after{
+    content: "";
+    position: absolute;
+    right: 0%;
+    bottom: 0;
+    left: 7%;
+    height: 4px;
+    width:86%;
+    background: white;
+    /* animacion de derecha a izquierda */
+    transform-origin: right;
+    transform: scaleX(0);
+    transition: transform 0.2s ease-in-out;
+}
+
+.resaltar-links:hover:after{
+    /* animacion de derecha a izquierda */
+    transform-origin: left;
+    transform: scaleX(1);
+}
+
+#nav-links{
+    display: flex;
+    justify-content: center;
+    margin-left: 65%;
+    margin-right: 30%;
+}
+
+/* index  */
+
+/* primera seccion */
+    /* primer div  */
+
+.wave{
+    height:54rem;
+    width: 100%;
+    position: absolute;
+    display: flex;
+    background-color: green;
+    opacity: 0.5;
+}
+
+.wave2{
+    stroke: none;
+    fill: blue;
+    height:50%;
+    width: 100%;
+}
+
+    /* segundo div  */
+
+.seccion-principal{
+    position: absolute;
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    margin: 10%;
+    margin-top:15%;
+}
+
+    /* h1 */
+
+.bienvenida{
+    background-color: blue;
+    padding: 2%;
+    font-size: 3rem;
+    font-family: "MuseoModerno", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 900;
+    font-style: normal;
+}
+
+    /* span  */
+
+#color-text{
+    color: white;
+}
+
+    /* p */
+
+#text{
+    color: white;
+    margin-top: 3%;
+    width: 90%;
+    font-size: 1.5rem;
+    font-family: "Open Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 700;
+    font-style: normal;
+    font-variation-settings: "wdth" 100;
+}
+
+    /* tercer div  */
+
+.rectangulo-divisor{
+    background-color: green;
+    position: absolute;
+    height: 11%;
+    margin-top:46%;
+    width: 100%;
+}
+
+.rectan{
+    margin-top: -55%;
+    margin-bottom: -5%;
+    fill: blue; 
+    fill-opacity:"1";
+}
+
+/* segunda seccion */
+
+.segunda-seccion{
+    position: absolute;
+    display: grid;
+    grid-template-columns: 25% 50%;
+    width: 100%;
+    justify-content: space-evenly;
+}
+
+    /* articulos */
+
+.art-index{
+    text-align: left;
+    background-color: white;
+    border-top: 15px solid blue;
+    padding:8%;
+}
+
+.margen-art{
+    margin-top: 4rem;
+    padding-bottom: 2%;
+    font-size: 2.5rem;
+}
+
+.art-texto{
+    text-align: left;
+    margin-top: 5%;
+    font-family: "Open Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal;
+    font-variation-settings: "wdth" 100;
+    color: gray;
+ }
+
+    /* primer articulo */
+
+#primer-art{
+    margin-top: 45rem; 
+}
+
+#img-deportes{
+    display: flex;
+    justify-content: space-around;
+    padding: 3%;
+}
+
+.deporte{
+    width:45%;
+    height: auto;
+}
+
+.boton{
+    background-color: green;
+    box-shadow: 2px 2px darkgreen;
+    border-radius: 5px;
+    border: none;
+}
+
+.boton:hover{
+    padding: 2%;
+    background-color: blue;
+    box-shadow: 2px 2px darkblue;
+}
+
+.text-boton, .fa-brands{
+    padding:3%;
+    color: white;
+    font-size: 1.2rem;
+    text-decoration: none;
+}
+
+.font-boton{
+    font-size: 1.5rem;
+    font-family: "MuseoModerno", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 700;
+    font-style: normal;
+    text-decoration: none;
+    color: white;
+    
+}
+
+#bot-sumate{
+    display: flex;
+    justify-content: center;
+    margin-left: 75%;
+    margin-top: 2%;
+    padding-top: 1%;
+    padding-bottom: 1%;
+    width: 10%;
+    z-index: 3000;
+ }
+
+ #bot-instagram{
+    margin-left: 15%;
+    margin-top: 15%;
+    margin-bottom: 45%;
+    width:70%;
+ }
+
+    /* segundo articulo */
+
+#segundo-art{
+    margin-top: 58rem;  
+} 
+
+footer{
+    position:absolute;
+    background-color: black;
+    opacity: 0.9;
+    margin-top: 100%; 
+    width: 100%;
+    z-index: 1000;    
+}
+
+.canales-inf{
+    background-color: darkslategrey;
+    border-top: 15px solid green;
+    font-size: 1.5rem;
+    color: white;
+}
+
+.canal-inf{
+    margin-left:10%;
+    margin-top: -5%;
+    padding: 3%;
+}
+
+.redes-icon{
+    font-size: 1.6rem;
+}
+
+.container-circle{
+    display: flex;
+    margin-top:5%;
+}
+
+.circle{
+    display: flex;
+    justify-content: center;
+    text-decoration: none;
+    border-radius: 80px;
+    background-color: cadetblue;
+    width: 4%;
+    padding:1%;
+    margin: 1%;
+    margin-bottom:10%;
+}
+
+.circle:hover{
+   background-color: darkcyan;
+}
+
+.bot-contacto{
+    background-color: green;
+    box-shadow: 3px 3px darkgreen;
+    border-radius: 5px;
+    width: 10%;
+    border: none;
+    margin-top: 5%;
+    text-align: center;
+    margin-left: 80%;
+    padding:1%;
+}
+
+.bot-contacto:hover{
+    background-color: blue;
+}
+
+.pie-pagina{
+    color: grey;
+    padding: 3%;
+    margin-left: 10%;
+    font-size: 1.5rem;
+}
+
+ 
