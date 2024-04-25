@@ -20,35 +20,51 @@
     top: 0;
     background-color: blue;
     width: 100%;
-    font-size: 1.5rem;
+    font-size: 1rem;
     z-index: 5000;    
 }
  
     /* Estilos del logo - enlace a home  */
 .logo{
     position: absolute;
-    margin-left: 10%;
+    float: left;
+    margin-left: 2rem;
     padding: 1%;
-    width: 10%;
+    width: 9rem;
     z-index: 25;
 }
 
 .logo:hover{
-    padding: 2%;
+    padding: 2rem;
+}
+
+#menu{
+    font-size: 2rem;
+    color: white;
+    float: right;
+    margin-right: 4rem;
+    line-height: 4rem;
+    cursor: pointer;
+    display: none;
+}
+
+#menu-check{
+    display: none;
 }
 
     /* Estilo a div - nav - enlaces a paginas  */
 #nav-links{
     display: flex;
     justify-content: center;
-    margin-left: 65%;
-    margin-right: 30%;
+    margin-left: 55rem;
+    margin-right: 25rem;
 }
 
     /* Estilos nav - enlaces a paginas  */
 .resaltar-links{
     position: relative;
     text-decoration: none;
+    text-transform: uppercase;
     text-align: center;
     color: white;
     padding: 15%;
@@ -89,7 +105,7 @@
 /* Primer div  */
 
 .wave{
-    height:54rem;
+    height:40rem;
     width: 100%;
     position: absolute;
     display: flex;
@@ -100,7 +116,7 @@
 .wave2{
     stroke: none;
     fill: blue;
-    height:50%;
+    height:54%;
     width: 100%;
 }
 
@@ -112,7 +128,7 @@
     display: flex;
     flex-direction: column;
     margin: 10%;
-    margin-top:15%;
+    margin-top:12%;
 }
 
     /* h1 */
@@ -136,10 +152,10 @@
     color: white;
     margin-top: 3%;
     width: 90%;
-    font-size: 1.5rem;
+    font-size: 1.2rem;
     font-family: "Open Sans", sans-serif;
     font-optical-sizing: auto;
-    font-weight: 700;
+    font-weight: 500;
     font-style: normal;
     font-variation-settings: "wdth" 100;
 }
@@ -156,6 +172,7 @@
     padding: 2%;
     background-color: blue;
     box-shadow: 2px 2px darkblue;
+    text-decoration: none;
 }
 
     /* Agrego fa-brands del boton instagram para darle el mismo estilo */
@@ -182,7 +199,7 @@
     display: flex;
     justify-content: center;
     margin-left: 75%;
-    margin-top: 2%;
+    margin-top: 3%;
     padding-top: 1%;
     padding-bottom: 1%;
     width: 10%;
@@ -195,7 +212,7 @@
     background-color: green;
     position: absolute;
     height: 11%;
-    margin-top:46%;
+    margin-top:43%;
     width: 100%;
 }
 
@@ -219,7 +236,7 @@
 /* Primer div  */
 
 #primer-art{
-    margin-top: 45rem; 
+    margin-top: 35rem; 
 }
 
 /*Para ambos articulos*/
@@ -235,14 +252,14 @@
     /* h2  */
 .margen-art{
     margin-top: 4rem;
-    padding-bottom: 2%;
-    font-size: 2.5rem;
+    padding-bottom: 1rem;
+    font-size: 2rem;
 }
 
     /* p  */
 .art-texto{
     text-align: left;
-    margin-top: 5%;
+    margin-top: 1rem;
     font-family: "Open Sans", sans-serif;
     font-optical-sizing: auto;
     font-weight: 500;
@@ -258,7 +275,7 @@
 #img-deportes{
     display: flex;
     justify-content: space-around;
-    padding: 3%;
+    padding: 1rem;
 }
 
 .deporte{
@@ -269,17 +286,15 @@
     /* nav - boton - instagram  */
 
  #bot-instagram{
-    margin-left: 15%;
-    margin-top: 15%;
-    margin-bottom: 45%;
-    width:70%;
+    margin: 15% 25% 10% 10% ;
+    width:14rem;
  }
 
 /* Segundo articulo */
 
     /* div  */
 #segundo-art{
-    margin-top: 58rem;  
+    margin-top: 45rem;  
 } 
 
 /* footer  */
@@ -288,7 +303,7 @@ footer{
     position:absolute;
     background-color: black;
     opacity: 0.9;
-    margin-top: 100%; 
+    margin-top: 120rem; 
     width: 100%;
     z-index: 1000;    
 }
@@ -308,7 +323,7 @@ footer{
     background-color: green;
     box-shadow: 3px 3px darkgreen;
     border-radius: 5px;
-    width: 10%;
+    width: 12%;
     border: none;
     margin-top: 5%;
     text-align: center;
@@ -319,6 +334,7 @@ footer{
 .bot-contacto:hover{
     background-color: blue;
     box-shadow: 3px 3px darkblue;
+    text-decoration: none;
 }
 
 /* div secundario  */
@@ -339,13 +355,12 @@ footer{
 
 /* div tercero contenedor de iconos  */
 
-.container-circle{
+.contains-circle{
     display: flex;
     margin-top: 7%;
 }
 
     /* div circulo individual para cada icono  */
-
 .circle{
     display: flex;
     justify-content: center;
@@ -369,6 +384,7 @@ footer{
 
  /* pie de página  */
     /* p  */
+
 .pie-pagina{
     color: grey;
     padding: 3%;
@@ -376,4 +392,428 @@ footer{
     font-size: 1.5rem;
 }
 
- 
+
+/* Tablet */
+@media screen and (min-width: 640px) and (max-width: 1320px){
+     /* header */
+    /* nav */
+    #nav {
+        height: 12vh;
+        border-bottom: 5px solid white;
+    }
+
+     /* Estilos del logo - enlace a home */
+    .logo {
+        width: 12%;
+    }
+
+    .logo:hover{
+        padding: 2%;
+    }
+
+     /* Mostrar el icono de la hamburguesa */
+    #menu {
+        display: block;
+    }
+
+    #menu:hover{
+        font-size: 2.5rem;
+    }
+
+    /* Estilo a div - nav - enlaces a paginas */
+    #nav-links {
+        display: none;
+        flex-direction: column;
+        background-color: blue;
+        width: 82%;
+        margin: 5% 7%;
+        padding: 0;
+        border-top: 8px solid green;
+    }
+
+    .resaltar-links {
+        flex-direction: column;
+        text-align: left;
+        margin: 0rem 5rem;
+        padding: 1.5rem;
+        font-size: 1rem;
+        text-transform: capitalize;
+        font-size: large;
+    }
+
+    .resaltar-links:after {
+        content: "";
+        position: absolute;
+        align-items: center;
+        top: 1rem;
+        margin-bottom: 0rem;
+        height: 6vh;
+        width: 20rem;
+        background-color: darkblue;
+        opacity: 0.5;
+    }
+
+    /* Estilos para el efecto hover en enlaces de navegación */
+    .resaltar-links:hover:after {
+        transform-origin: left;
+        margin-left: -1rem;
+        transform: scaleX(1);
+        width: 90%; 
+    }
+
+    /* Mostrar el menú de navegación cuando el checkbox está marcado */
+    #menu-check:checked ~ #nav-links {
+        display: flex;
+    }
+
+    /* index */
+    /* main */
+
+    /* Primera seccion */
+    
+    
+    /* segundo div */
+    .seccion-principal {
+        position: absolute;
+        width: 73%;
+        display: flex;
+    
+        margin: 10%;
+        margin-top: 15%;
+    }
+
+    /* h1 */
+    .bienvenida {
+        padding: 3%;
+        font-size: 1.8rem;
+    }
+
+    /* p */
+    #text {
+        margin-top: 8%;
+        width: 90%;
+        font-size: 1rem;
+    }
+
+    /* Agrego fa-brands del boton instagram para darle el mismo estilo */
+    .text-boton,
+    .fa-brands {
+        padding: 5%;
+        font-size: 1rem;
+    }
+
+    /* Estilo para boton sumate - contactate */
+    #bot-sumate {
+        margin-top: 8%;
+        margin-left: 5%;
+        width: 15%;
+    }
+
+    /* Tercer div */
+    .rectangulo-divisor {
+        margin-top: 40rem;
+        height: 12%;
+    }
+
+    .rectan {
+        margin-top: -10rem;
+        height: 300%;
+        
+    }
+
+    /* Segunda seccion */
+    .segunda-seccion {
+        position: absolute;
+        display: grid;
+        grid-template-columns: 80%;
+    }
+
+    /* Primer div */
+    #primer-art {
+        margin-top: 43rem;
+    }
+
+    /* nav - boton - instagram */
+    #bot-instagram{
+        margin: 15% 25% 20% 30% ;
+     }
+
+    /* Segundo articulo */
+    /* div */
+    #segundo-art {
+        margin-top: 15%;
+    }
+
+   /* footer  */
+
+    footer{
+        position:absolute;
+        margin-top: 180rem;  
+    }
+
+    /* div principal  */
+
+    .canales-inf{
+        font-size: 1.2rem;
+        height: 29rem;
+    }   
+
+    /* div principal */
+    /* nav - boton - contacto */
+    .bot-contacto {
+        box-shadow: 2px 2px darkgreen;
+        width: 25%;
+        margin-top: 10rem;
+        margin-bottom: -20rem;
+        float: right;
+        margin-right: 10%;
+    }
+
+    /* div secundario  */
+  
+        /* h2  */
+    .font-text-inf{
+        padding-bottom: 1rem;
+        font-size: 1.2rem;
+        margin-top: 11rem;
+    }
+
+    /* div tercero contenedor de iconos */
+    .contains-circle {
+        margin-top: 2rem;
+        margin-bottom: 3rem;
+    }
+
+    /* div circulo individual para cada icono */
+    .circle {
+        border-radius: 80px;
+        width: 8%;
+        padding: 1%;
+        margin: 2%;
+    }
+
+    /* tamaño iconos redes */
+    .redes-icon {
+        font-size: 1.5rem;
+    }
+
+    /* pie de página  */
+    /* p  */
+
+    .pie-pagina{
+        padding: 3%;
+        font-size: 1.2rem;
+    }
+
+}
+
+/* Celular */
+@media screen and (max-width: 640px) {
+    /* header */
+    /* nav */
+    #nav {
+        height: 11vh;
+        border-bottom: 5px solid white;
+    }
+
+    /* Estilos del logo - enlace a home */
+    .logo {
+        width: 17%;
+    }
+
+    .logo:hover{
+        padding: 3%;
+    }
+
+    /* Mostrar el icono de la hamburguesa */
+    #menu {
+        display: block;
+    }
+
+    #menu:hover{
+        font-size: 2.5rem;
+    }
+
+    /* Estilo a div - nav - enlaces a paginas */
+    #nav-links {
+        display: none;
+        flex-direction: column;
+        background-color: blue;
+        width: 82%;
+        margin: 5% 7%;
+        padding: 0;
+        border-top: 8px solid green;
+    }
+
+    .resaltar-links {
+        flex-direction: column;
+        text-align: left;
+        margin: 0rem 2rem;
+        padding: 1.5rem;
+        font-size: 1rem;
+        text-transform: capitalize;
+        font-size: large;
+    }
+
+    .resaltar-links:after {
+        content: "";
+        position: absolute;
+        align-items: center;
+        top: 1rem;
+        margin-bottom: 0rem;
+        height: 6vh;
+        width: 20rem;
+        background-color: darkblue;
+        opacity: 0.5;
+    }
+
+    /* Estilos para el efecto hover en enlaces de navegación */
+    .resaltar-links:hover:after {
+        transform-origin: left;
+        margin-left: -1rem;
+        transform: scaleX(1);
+        width: 90%; 
+    }
+
+    /* Mostrar el menú de navegación cuando el checkbox está marcado */
+    #menu-check:checked ~ #nav-links {
+        display: flex;
+    }
+
+    /* index */
+    /* main */
+
+    /* Primera seccion */
+    /* segundo div */
+    .seccion-principal {
+        position: absolute;
+        width: 73%;
+        display: flex;
+        flex-direction: column;
+        margin: 10%;
+        margin-top: 25%;
+    }
+
+    /* h1 */
+    .bienvenida {
+        padding: 2%;
+        font-size: 1.65rem;
+    }
+
+    /* p */
+    #text {
+        margin-top: 8%;
+        width: 90%;
+        font-size: 1rem;
+    }
+
+    /* Agrego fa-brands del boton instagram para darle el mismo estilo */
+    .text-boton,
+    .fa-brands {
+        padding: 5%;
+        font-size: 1rem;
+    }
+
+    /* Estilo para boton sumate - contactate */
+    #bot-sumate {
+        margin-top: 8%;
+        margin-left: 5%;
+        width: 25%;
+    }
+
+    /* Tercer div */
+    .rectangulo-divisor {
+        margin-top: 40rem;
+        height: 12%;
+    }
+
+    .rectan {
+        margin-top: -6rem;
+        height: 200%;
+    }
+
+    /* Segunda seccion */
+    .segunda-seccion {
+        position: absolute;
+        display: grid;
+        grid-template-columns: 80%;
+    }
+
+    /* Primer div */
+    #primer-art {
+        margin-top: 43rem;
+    }
+
+    /* nav - boton - instagram */
+    #bot-instagram {
+        margin-bottom: 10%;
+        margin-left: 2.5rem;
+    }
+
+    /* Segundo articulo */
+    /* div */
+    #segundo-art {
+        margin-top: 15%;
+    }
+
+   /* footer  */
+
+    footer{
+        position:absolute;
+        margin-top: 180rem;  
+    }
+
+    /* div principal  */
+
+    .canales-inf{
+        font-size: 1.2rem;
+        height: 29rem;
+    }   
+
+    /* div principal */
+    /* nav - boton - contacto */
+    .bot-contacto {
+        box-shadow: 2px 2px darkgreen;
+        width: 30%;
+        margin-top: 45%;
+        margin-bottom: -45%;
+        float: right;
+        margin-right: 10%;
+    }
+
+    /* div secundario  */
+  
+        /* h2  */
+    .font-text-inf{
+        padding-bottom: 3%;
+        font-size: 1.2rem;
+        margin-top: 25%;
+    }
+
+    /* div tercero contenedor de iconos */
+    .contains-circle {
+        margin-top: 30%;
+    }
+
+    /* div circulo individual para cada icono */
+    .circle {
+        border-radius: 80px;
+        width: 8%;
+        padding: 1%;
+        margin: 2%;
+    }
+
+    /* tamaño iconos redes */
+    .redes-icon {
+        font-size: 1.5rem;
+    }
+
+    /* pie de página  */
+    /* p  */
+
+    .pie-pagina{
+        padding: 5%;
+        font-size: 1.2rem;
+    }
+
+}
