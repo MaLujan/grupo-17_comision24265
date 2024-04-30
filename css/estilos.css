@@ -177,16 +177,16 @@
 
     /* Agrego fa-brands del boton instagram para darle el mismo estilo */
 .text-boton, .fa-brands{
-    padding:3%;
+    padding:2%;
     color: white;
-    font-size: 1.2rem;
+    font-size: 1.1rem;
     text-decoration: none;
 }
 
     /* Estilo para boton sumate - contactate  */
 
 .font-boton{
-    font-size: 1.5rem;
+    font-size: 1.2rem;
     font-family: "MuseoModerno", sans-serif;
     font-optical-sizing: auto;
     font-weight: 700;
@@ -223,7 +223,7 @@
     fill-opacity:"1";
 }
 
-/* Segunda seccion */
+/* Segunda seccion div */
 
 .segunda-seccion{
     position: absolute;
@@ -233,7 +233,7 @@
     justify-content: space-evenly;
 }
 
-/* Primer div  */
+/* Primer article */
 
 #primer-art{
     margin-top: 35rem; 
@@ -290,12 +290,36 @@
     width:14rem;
  }
 
-/* Segundo articulo */
+/* Segundo article */
 
     /* div  */
 #segundo-art{
     margin-top: 45rem;  
 } 
+
+/* div galeria de imagenes */
+.galeria-container{
+display: grid;
+grid-template-columns: repeat(3, 1fr);
+grid-auto-rows: 350px;
+padding: 10px;
+grid-gap: 5px;
+}
+
+.galeria-img{
+width: 100%;
+height: auto;
+}
+
+.galeria-item{
+    margin-top:93rem;
+    z-index: 2000;
+}
+
+.galeria-item:hover{
+    transform: scale(1.15 );
+    z-index: 3000;
+}
 
 /* footer  */
 
@@ -303,7 +327,7 @@ footer{
     position:absolute;
     background-color: black;
     opacity: 0.9;
-    margin-top: 120rem; 
+    margin-top: 93rem; 
     width: 100%;
     z-index: 1000;    
 }
@@ -521,14 +545,14 @@ footer{
         
     }
 
-    /* Segunda seccion */
+    /* Segunda seccion div */
     .segunda-seccion {
         position: absolute;
         display: grid;
         grid-template-columns: 80%;
     }
 
-    /* Primer div */
+    /* Primer article */
     #primer-art {
         margin-top: 43rem;
     }
@@ -538,17 +562,29 @@ footer{
         margin: 15% 25% 20% 30% ;
      }
 
-    /* Segundo articulo */
+    /* Segundo article */
     /* div */
     #segundo-art {
         margin-top: 15%;
+    }
+
+    /* div galeria de imagenes */
+    .galeria-container{
+        grid-template-columns: repeat(2, 1fr);
+        grid-auto-rows: 300px;
+        padding: 15% 5%;
+        }
+    
+    .galeria-item{
+        margin-top:155rem;
+        z-index: 2000;
     }
 
    /* footer  */
 
     footer{
         position:absolute;
-        margin-top: 180rem;  
+        margin-top: 155rem;  
     }
 
     /* div principal  */
@@ -708,8 +744,7 @@ footer{
     }
 
     /* Agrego fa-brands del boton instagram para darle el mismo estilo */
-    .text-boton,
-    .fa-brands {
+    .text-boton, .fa-brands {
         padding: 5%;
         font-size: 1rem;
     }
@@ -732,14 +767,14 @@ footer{
         height: 200%;
     }
 
-    /* Segunda seccion */
+    /* Segunda seccion div */
     .segunda-seccion {
         position: absolute;
         display: grid;
         grid-template-columns: 80%;
     }
 
-    /* Primer div */
+    /* Primer article */
     #primer-art {
         margin-top: 43rem;
     }
@@ -750,17 +785,28 @@ footer{
         margin-left: 2.5rem;
     }
 
-    /* Segundo articulo */
+    /* Segundo article */
     /* div */
     #segundo-art {
         margin-top: 15%;
+    }
+
+    /* div galeria de imagenes */
+    .galeria-container{
+        grid-template-columns: repeat(2, 1fr);
+        grid-auto-rows: 180px;
+        }
+
+    .galeria-item{
+        margin-top:168rem;
+        z-index: 2000;
     }
 
    /* footer  */
 
     footer{
         position:absolute;
-        margin-top: 180rem;  
+        margin-top: 170rem;  
     }
 
     /* div principal  */
