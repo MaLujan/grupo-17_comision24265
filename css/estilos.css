@@ -97,6 +97,19 @@
     transform: scaleX(1);
 }
 
+/* div img whatsapp */
+.logo-fijo{
+    position: fixed;
+    margin: 1%;
+    bottom: 2rem;
+    right: 2%;
+    width: 4rem;
+    z-index: 6000;
+}
+
+.logo-fijo:hover{
+    transform: scale(1.35);
+}
 
 /* index  */
 /* main  */
@@ -169,7 +182,7 @@
 }
 
 .boton:hover{
-    padding: 2%;
+    transform: scale(1.15);
     background-color: blue;
     box-shadow: 2px 2px darkblue;
     text-decoration: none;
@@ -356,6 +369,7 @@ footer{
 }
 
 .bot-contacto:hover{
+    transform: scale(1.15);
     background-color: blue;
     box-shadow: 3px 3px darkblue;
     text-decoration: none;
@@ -399,6 +413,7 @@ footer{
 
 .circle:hover{
    background-color: darkcyan;
+   transform: scale(1.15);
 }
 
     /* tamaño iconos redes  */
