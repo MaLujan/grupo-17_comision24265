@@ -443,7 +443,7 @@ footer{
 
      /* Estilos del logo - enlace a home */
     .logo {
-        width: 12%;
+        width: 7rem;
     }
 
     .logo:hover{
@@ -516,9 +516,8 @@ footer{
         position: absolute;
         width: 73%;
         display: flex;
-    
         margin: 10%;
-        margin-top: 15%;
+        margin-top: 20%;
     }
 
     /* h1 */
@@ -555,9 +554,7 @@ footer{
     }
 
     .rectan {
-        margin-top: -10rem;
-        height: 300%;
-        
+        margin-top: -10rem;   
     }
 
     /* Segunda seccion div */
@@ -669,7 +666,7 @@ footer{
 
     /* Estilos del logo - enlace a home */
     .logo {
-        width: 17%;
+        width: 5rem;
     }
 
     .logo:hover{
@@ -779,7 +776,7 @@ footer{
 
     .rectan {
         margin-top: -6rem;
-        height: 200%;
+        
     }
 
     /* Segunda seccion div */
@@ -803,17 +800,18 @@ footer{
     /* Segundo article */
     /* div */
     #segundo-art {
-        margin-top: 15%;
+        margin-top: 3rem;
     }
 
     /* div galeria de imagenes */
     .galeria-container{
         grid-template-columns: repeat(2, 1fr);
-        grid-auto-rows: 180px;
+        grid-auto-rows: 160px;
+        
         }
 
     .galeria-item{
-        margin-top:168rem;
+        margin-top: 182rem;
         z-index: 2000;
     }
 
@@ -821,7 +819,8 @@ footer{
 
     footer{
         position:absolute;
-        margin-top: 170rem;  
+        bottom: 0; 
+        top: 120rem; 
     }
 
     /* div principal  */
@@ -874,7 +873,7 @@ footer{
 
     .pie-pagina{
         padding: 5%;
-        font-size: 1.2rem;
+        font-size: 1rem;
     }
 
 }
