@@ -794,7 +794,7 @@ footer{
     /* nav - boton - instagram */
     #bot-instagram {
         margin-bottom: 10%;
-        margin-left: 2.5rem;
+        margin-left: 1rem;
     }
 
     /* Segundo article */
@@ -872,8 +872,9 @@ footer{
     /* p  */
 
     .pie-pagina{
-        padding: 5%;
-        font-size: 1rem;
+        padding: 3%;
+        font-size: 0.9rem;
+        
     }
 
 }
