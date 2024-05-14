@@ -278,7 +278,7 @@
     font-weight: 500;
     font-style: normal;
     font-variation-settings: "wdth" 100;
-    color: gray;
+    color: black;
  }
 
 /*  Primer articulo */
@@ -425,9 +425,9 @@ footer{
     /* p  */
 
 .pie-pagina{
-    color: grey;
-    padding: 3%;
-    margin-left: 10%;
+    color: white;
+    padding: 2%;
+    margin-left: 8%;
     font-size: 1.5rem;
 }
 
@@ -758,7 +758,7 @@ footer{
     /* Agrego fa-brands del boton instagram para darle el mismo estilo */
     .text-boton, .fa-brands {
         padding: 5%;
-        font-size: 1rem;
+        font-size: 0.8rem;
     }
 
     /* Estilo para boton sumate - contactate */
@@ -819,8 +819,10 @@ footer{
 
     footer{
         position:absolute;
-        bottom: 0; 
-        top: 120rem; 
+        bottom: 100; 
+        top: 120rem;
+
+        
     }
 
     /* div principal  */
@@ -874,7 +876,7 @@ footer{
     .pie-pagina{
         padding: 3%;
         font-size: 0.9rem;
-        
+    
     }
 
 }
