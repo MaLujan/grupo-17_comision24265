@@ -350,7 +350,7 @@ footer{
 .canales-inf{
     background-color: darkslategrey;
     border-top: 15px solid green;
-    font-size: 1.5rem;
+    font-size: 1.8rem;
     color: white;
 }
 
@@ -828,7 +828,7 @@ footer{
     /* div principal  */
 
     .canales-inf{
-        font-size: 1.2rem;
+        font-size: 1.4rem;
         height: 29rem;
     }   
 
