@@ -1,14 +1,15 @@
 document.addEventListener("DOMContentLoaded", function() {
-    // Cargar el header desde index.html
-    fetch('../index.html')
+    // Cargar el encabezado desde el archivo header.html
+    fetch('../partials/header.html')
         .then(response => response.text())
         .then(data => {
-            const parser = new DOMParser();
-            const doc = parser.parseFromString(data, 'text/html');
-            const header = doc.getElementById('header').innerHTML;
-            document.getElementById('header-placeholder').innerHTML = header;
+            document.getElementById('header-placeholder').innerHTML = data;
+        });
 
-            const footer = doc.getElementById('footer').innerHTML;
-            document.getElementById('footer-placeholder').innerHTML = footer;
+    // Cargar el pie de página desde el archivo footer.html
+    fetch('../partials/footer.html')
+        .then(response => response.text())
+        .then(data => {
+            document.getElementById('footer-placeholder').innerHTML = data;
         });
 });
