@@ -1,5 +1,5 @@
 document.addEventListener("DOMContentLoaded", function() {
-    // Cargar el header desde index.html
+    // Cargo el header desde index.html
     fetch('../index.html')
         .then(response => response.text())
         .then(data => {
@@ -12,3 +12,4 @@ document.addEventListener("DOMContentLoaded", function() {
             document.getElementById('footer-placeholder').innerHTML = footer;
         });
 });
+

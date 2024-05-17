@@ -439,8 +439,8 @@ footer{
     position: absolute;
     width: 100%;
     height: 10rem;
-    margin-top: 6rem;
-    background-color: green;
+    margin-top: -10rem;
+    background-color: darkgreen;
 }
     /* ul  */
 .deportes{
@@ -464,6 +464,57 @@ footer{
     transform: scale(1.20);
 
 }
+
+/* segunda section  */
+    /* h1  */
+.intro-deportes{
+    margin-top: 15rem;
+    background-color: green;
+    height: 60rem;
+    padding-left: 10rem;
+    border-bottom:35px solid blue;
+}
+
+.deportes-titulo{
+    font-family: "MuseoModerno", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 900;
+    font-style: normal;
+    color: white;
+    font-size: 3rem;
+    padding-top: 8rem;
+    opacity: 1;
+    
+}
+
+.deportes-text{
+    font-family: "Open Sans", sans-serif;
+    color: white;
+    width: 60%;
+    padding-top: 1rem;
+    opacity: 1;
+}
+
+.titulo-video{
+    background-color: blue;
+    margin-top: 5rem;
+    width: 10%;
+    height: 6%;
+    text-align: center;
+    font-family: "Open Sans", sans-serif;
+    padding-top: 1.3rem;
+    font-size: 1rem;
+    color: white;
+    box-shadow: 2px 2px darkblue;
+}
+
+.video-deportes{
+    border-top: 20px solid darkblue;
+    width: 85%;
+    height:50%;
+    align-content: center;
+}
+   
 
 
 /* Tablet */
