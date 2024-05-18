@@ -1,21 +1,28 @@
-function includeHTML() {
-    const elements = document.querySelectorAll('[data-include]');
-    elements.forEach(el => {
-        const file = el.getAttribute('data-include');
-        if (file) {
-            fetch(file)
-                .then(response => response.text())
-                .then(data => {
-                    el.innerHTML = data;
-                    el.removeAttribute('data-include');
-                    includeHTML(); // Llama recursivamente para incluir elementos anidados
-                })
-                .catch(err => console.error('Error including HTML:', err));
-        }
-    });
+// Función para cargar contenido HTML desde un archivo y agregarlo a un elemento
+function loadHTML(elementId, filePath) {
+    fetch(filePath)
+        .then(response => {
+            if (!response.ok) {
+                throw new Error(`Error al cargar ${filePath}: ${response.statusText}`);
+            }
+            return response.text();
+        })
+        .then(data => {
+            document.getElementById(elementId).innerHTML = data;
+        })
+        .catch(error => {
+            console.error('Error:', error);
+        });
 }
 
-document.addEventListener('DOMContentLoaded', includeHTML);
+// Obtener la ruta relativa del archivo
+function getRelativePath(file) {
+    const basePath = window.location.pathname.split('/').slice(0, -3).join('/');
+    return `${basePath}/${file}`;
+}
 
-
-document.addEventListener('DOMContentLoaded', includeHTML);
+// Cargar header y footer cuando el documento está listo
+document.addEventListener("DOMContentLoaded", function() {
+    loadHTML("header", getRelativePath("header.html"));
+    loadHTML("footer", getRelativePath("footer.html"));
+});
