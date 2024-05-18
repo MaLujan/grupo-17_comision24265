@@ -8,7 +8,7 @@ function includeHTML() {
                 .then(data => {
                     el.innerHTML = data;
                     el.removeAttribute('data-include');
-                    adjustPaths(el); // Ajusta las rutas relativas
+                    adjustPaths(el); // Ajusto las rutas relativas
                     includeHTML(); // Llama recursivamente para incluir elementos anidados
                 })
                 .catch(err => console.error('Error including HTML:', err));
@@ -27,8 +27,10 @@ function adjustPaths(container) {
 }
 
 function getRelativeDepth() {
-    const path = window.location.pathname;
-    const depth = path.split('/').length - 2; // -2 porque el último elemento es el archivo y el primero es vacío
+    const path = window.location.pathname.split('/');
+    const repository = 'https://github.com/MaLujan/grupo17_comision24265'; 
+    const index = path.indexOf(repository);
+    const depth = path.length - index - 2; 
     let relativePath = '';
     for (let i = 0; i < depth; i++) {
         relativePath += '../';
