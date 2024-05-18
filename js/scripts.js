@@ -30,7 +30,7 @@ function getRelativeDepth() {
     const path = window.location.pathname.split('/');
     const repository = 'https://github.com/MaLujan/grupo17_comision24265'; 
     const index = path.indexOf(repository);
-    const depth = path.length - index - 2; 
+    const depth = path.length - index - 1; 
     let relativePath = '';
     for (let i = 0; i < depth; i++) {
         relativePath += '../';
