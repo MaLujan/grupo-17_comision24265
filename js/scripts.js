@@ -2,7 +2,7 @@
 
 document.addEventListener("DOMContentLoaded", function() {
     // Cargo el header y footer desde index.html
-    fetch('../index.html')
+    fetch('./index.html')
         .then(response => response.text())
         .then(data => {
             const parser = new DOMParser();
