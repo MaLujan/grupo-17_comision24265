@@ -809,6 +809,7 @@ footer{
     /* p */
     .deportes-text{
         width:80%;
+        font-size: 0.9rem;
     }
 
         /* p video */
@@ -1094,33 +1095,33 @@ footer{
 
     /*li*/
     .deporte{
-        font-size: 0.7rem;
+        font-size: 0.6rem;
     }
 
     /* primer section  */
     .intro-deportes{
         margin-top: 8rem;
         padding-left: 6rem;
-        height: 30rem;
+        height: 28rem;
     }
 
     
     /* h1  */
     .deportes-titulo{
         font-size: 1.3rem;
-        padding-top: 6rem;
+        padding-top: 5rem;
     }
 
-    /* p */
-    .deportes-text{
+     /* p */
+     .deportes-text{
         width:80%;
+        font-size: 0.7rem;
     }
-
         /* p video */
     .titulo-video{
         margin-top: 1.2rem;
         padding-top: 0.5rem;
-        font-size: 0.9rem;
+        font-size: 0.7rem;
         width: 8rem;
     }
 
@@ -1128,7 +1129,7 @@ footer{
     .video-deportes{
         border-top: 10px darkblue solid;
         width: 60%;
-        height:30%;
+        height:20%;
     }
 
      /* segundo seccion*/
@@ -1140,28 +1141,36 @@ footer{
 
      /* h1 secciones deporte*/
     .title-deporte{
-        margin-top: -5rem;
-        font-size: 1.2rem;
+        margin-top: -7rem;
+        font-size: 1rem;
         margin-bottom: -1rem;
+        margin-left: -2rem;
+        margin-right: -2rem;
     }
 
     /* h3 de secciones deporte*/
     .subtitle-deporte{
         font-size: 0.7rem;
-       
+        margin-bottom: -1rem;
+        margin-left: -2rem;
+        margin-right: -2rem;
     }
 
     .font-size-consulte{
-        font-size: 0.7rem;
+        font-size: 0.6rem;
+        margin-left: -2rem;
+        margin-right: -2rem;
     }
 
     /* div seccion + info*/
     .mas-info{
-        margin-top: -6rem;
-        margin-left: 8rem;
+        border-top: 8px solid green;
+        margin-top: -7rem;
+        margin-left: 6rem;
         padding: 2rem;
         width: 50%;
         height: 6rem;
+        text-align: center;
     }
 
     /* h1 seccion + info*/
