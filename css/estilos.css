@@ -5,6 +5,22 @@
 *{
     margin: 0;
     box-sizing: border-box;
+    text-decoration: none;
+}
+
+.fuente-principal{
+    font-family: "MuseoModerno", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 900;
+    font-style: normal;
+}
+
+.fuente-secundaria{
+    font-family: "Open Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal;
+    font-variation-settings: "wdth" 100;  
 }
 
 /*body */
@@ -63,7 +79,6 @@
     /* Estilos nav - enlaces a paginas  */
 .resaltar-links{
     position: relative;
-    text-decoration: none;
     text-transform: uppercase;
     text-align: center;
     color: white;
@@ -71,9 +86,7 @@
     margin: 5%;
     margin-top: 50%;
     margin-bottom: 50%;
-    font-family: "Alegreya Sans SC", sans-serif;
-    font-weight: 100;
-    font-style: normal;
+    font-weight: 400;
 } 
 
 .resaltar-links:after{
@@ -149,10 +162,6 @@
     background-color: blue;
     padding: 2%;
     font-size: 3rem;
-    font-family: "MuseoModerno", sans-serif;
-    font-optical-sizing: auto;
-    font-weight: 900;
-    font-style: normal;
 }
 
     /* span  */
@@ -166,11 +175,6 @@
     margin-top: 3%;
     width: 90%;
     font-size: 1.2rem;
-    font-family: "Open Sans", sans-serif;
-    font-optical-sizing: auto;
-    font-weight: 500;
-    font-style: normal;
-    font-variation-settings: "wdth" 100;
 }
     /* nav - boton - sumate  */
 
@@ -185,7 +189,6 @@
     transform: scale(1.15);
     background-color: blue;
     box-shadow: 2px 2px darkblue;
-    text-decoration: none;
 }
 
     /* Agrego fa-brands del boton instagram para darle el mismo estilo */
@@ -193,18 +196,13 @@
     padding:2%;
     color: white;
     font-size: 1.1rem;
-    text-decoration: none;
 }
 
     /* Estilo para boton sumate - contactate  */
 
 .font-boton{
     font-size: 1.2rem;
-    font-family: "MuseoModerno", sans-serif;
-    font-optical-sizing: auto;
     font-weight: 700;
-    font-style: normal;
-    text-decoration: none;
     color: white;   
 }
 
@@ -273,11 +271,6 @@
 .art-texto{
     text-align: left;
     margin-top: 1rem;
-    font-family: "Open Sans", sans-serif;
-    font-optical-sizing: auto;
-    font-weight: 500;
-    font-style: normal;
-    font-variation-settings: "wdth" 100;
     color: black;
  }
 
@@ -372,7 +365,6 @@ footer{
     transform: scale(1.15);
     background-color: blue;
     box-shadow: 3px 3px darkblue;
-    text-decoration: none;
 }
 
 /* div secundario  */
@@ -384,10 +376,7 @@ footer{
 
     /* h2  */
 .font-text-inf{
-    font-family: "Teko", sans-serif;
-    font-optical-sizing: auto;
     font-weight: 700;
-    font-style: normal;
     padding-bottom: 2%;
 }
 
@@ -402,7 +391,6 @@ footer{
 .circle{
     display: flex;
     justify-content: center;
-    text-decoration: none;
     border-radius: 80px;
     background-color: cadetblue;
     width: 4%;
@@ -434,7 +422,7 @@ footer{
 /* -------------------------------------------------------------------------- */
 /* SECCION DEPORTES */
 
-/* primer section  */
+/* div  */
 .submenu-deportes{
     position: absolute;
     width: 100%;
@@ -443,30 +431,28 @@ footer{
     background-color: darkgreen;
 }
     /* ul  */
-.deportes{
+.deportes {
     list-style-type: none; 
     margin: 2rem;
     padding: 2rem;
     display: grid;
     grid-template-columns:20% 29% 20%;
-    justify-content: space-evenly;
-    color: white;
-    font-family: "Open Sans", sans-serif;   
+    justify-content: space-evenly;  
 }
 
     /* li  */
 .deporte{
     padding-bottom: 1rem;
+    color: white;
 }
 
 .deporte:hover{
     transform-origin: left;
     transform: scale(1.20);
-
 }
 
-/* segunda section  */
-    /* h1  */
+
+/* primer section  */
 .intro-deportes{
     margin-top: 15rem;
     background-color: green;
@@ -475,48 +461,102 @@ footer{
     border-bottom:35px solid blue;
 }
 
+ /* h1  */
 .deportes-titulo{
-    font-family: "MuseoModerno", sans-serif;
-    font-optical-sizing: auto;
-    font-weight: 900;
-    font-style: normal;
     color: white;
     font-size: 3rem;
     padding-top: 8rem;
-    opacity: 1;
-    
+    opacity: 1;    
 }
 
+ /* p */
 .deportes-text{
-    font-family: "Open Sans", sans-serif;
     color: white;
     width: 60%;
     padding-top: 1rem;
     opacity: 1;
 }
 
+ /* p video */
 .titulo-video{
     background-color: blue;
     margin-top: 5rem;
     width: 10%;
     height: 6%;
     text-align: center;
-    font-family: "Open Sans", sans-serif;
     padding-top: 1.3rem;
     font-size: 1rem;
     color: white;
     box-shadow: 2px 2px darkblue;
 }
 
+ /* iframe video */
 .video-deportes{
+    position: absolute;
+    border: none;
     border-top: 20px solid darkblue;
-    width: 85%;
-    height:50%;
+    width: 80%;
+    height:80%;
     align-content: center;
 }
-   
 
+ /* segundo seccion*/
+.seccion-deporte{
+    display: grid;
+    grid-template-columns: 65% 30%;
+    height: 35rem;
+}
 
+ /* fondo claro de secciones deporte*/
+.background-seccion-claro{
+    background-color: whitesmoke;
+    color: black;
+    opacity: 0.8;
+}
+
+ /* fondo oscuro de secciones deporte*/
+.background-seccion-oscuro{
+    background-color: navy;
+    opacity: 0.9;
+    color: white;
+}
+
+ /* div secciones deporte*/
+.informacion-deporte{
+    padding: 8rem;
+}
+
+ /* h1 secciones deporte*/
+.title-deporte{
+    font-size: 2.5rem;
+}
+
+ /* h3 de secciones deporte*/
+.subtitle-deporte{
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+}
+
+ /* div seccion + info*/
+.mas-info{
+    margin-top: 8rem;
+    padding: 3rem;
+    background-color: white;
+    border-top: 1rem solid green;
+    height: 15rem;
+    color: black;
+}
+
+/* h1 seccion + info*/
+.title-masinfo{
+    padding-bottom: 2rem;
+    font-size: 2rem;
+}
+
+/* section deporte -> natacion*/
+.margin-botton-con-footer{
+    margin-bottom:-92rem;
+}
 
 /* Tablet */
 @media screen and (min-width: 640px) and (max-width: 1320px){
@@ -739,6 +779,79 @@ footer{
         font-size: 1.2rem;
     }
 
+    /* -------------------------------------------------------------------------- */
+    /* SECCION DEPORTES */
+
+    /* div  */
+    .submenu-deportes{
+        margin-top: -6rem;
+    }
+
+    /*li*/
+    .deporte{
+        font-size: 0.9rem;
+    }
+
+    /* primer section  */
+    .intro-deportes{
+        margin-top: 8rem;
+        height: 50rem;
+        padding-left: 8rem;
+    }
+
+    
+    /* h1  */
+    .deportes-titulo{
+        font-size: 2rem;
+        padding-top: 7rem;
+    }
+
+    /* p */
+    .deportes-text{
+        width:80%;
+    }
+
+        /* p video */
+    .titulo-video{
+        margin-top: 3rem;
+        width: 8rem;
+    }
+
+    /* iframe video */
+    .video-deportes{
+        width: 65%;
+        height:55%;
+    }
+
+     /* segundo seccion*/
+    .seccion-deporte{
+        height: 30%;
+    }
+
+     /* h1 secciones deporte*/
+    .title-deporte{
+        font-size: 1.2rem;
+    }
+
+    /* h3 de secciones deporte*/
+    .subtitle-deporte{
+        font-size: 0.9rem;
+    }
+
+    .font-size-consulte{
+        font-size: 0.8rem;
+    }
+
+    /* h1 seccion + info*/
+    .title-masinfo{
+        padding-bottom: 0.9rem;
+        font-size: 1rem;
+    }
+
+    /* section deporte -> natacion*/
+    .margin-botton-con-footer{
+        margin-bottom:-154rem;
+    }
 }
 
 /* Celular */
@@ -906,9 +1019,7 @@ footer{
     footer{
         position:absolute;
         bottom: 100; 
-        top: 120rem;
-
-        
+        top: 125rem;
     }
 
     /* div principal  */
@@ -963,6 +1074,106 @@ footer{
         padding: 3%;
         font-size: 0.9rem;
     
+    }
+
+        /* -------------------------------------------------------------------------- */
+    /* SECCION DEPORTES */
+
+    /* div  */
+    .submenu-deportes{
+        margin-top: -6rem;
+    }
+
+        /* ul  */
+    .deportes {
+        display: grid;
+        grid-template-columns:repeat(2, 1fr);
+        justify-content:center;  
+        padding-left: 4rem;
+    }
+
+    /*li*/
+    .deporte{
+        font-size: 0.7rem;
+    }
+
+    /* primer section  */
+    .intro-deportes{
+        margin-top: 8rem;
+        padding-left: 6rem;
+        height: 30rem;
+    }
+
+    
+    /* h1  */
+    .deportes-titulo{
+        font-size: 1.3rem;
+        padding-top: 6rem;
+    }
+
+    /* p */
+    .deportes-text{
+        width:80%;
+    }
+
+        /* p video */
+    .titulo-video{
+        margin-top: 1.2rem;
+        padding-top: 0.5rem;
+        font-size: 0.9rem;
+        width: 8rem;
+    }
+
+    /* iframe video */
+    .video-deportes{
+        border-top: 10px darkblue solid;
+        width: 60%;
+        height:30%;
+    }
+
+     /* segundo seccion*/
+    .seccion-deporte{
+        display: flex;
+        flex-direction: column;
+        height: 30rem;
+    }
+
+     /* h1 secciones deporte*/
+    .title-deporte{
+        margin-top: -5rem;
+        font-size: 1.2rem;
+        margin-bottom: -1rem;
+    }
+
+    /* h3 de secciones deporte*/
+    .subtitle-deporte{
+        font-size: 0.7rem;
+       
+    }
+
+    .font-size-consulte{
+        font-size: 0.7rem;
+    }
+
+    /* div seccion + info*/
+    .mas-info{
+        margin-top: -6rem;
+        margin-left: 8rem;
+        padding: 2rem;
+        width: 50%;
+        height: 6rem;
+    }
+
+    /* h1 seccion + info*/
+    .title-masinfo{
+        margin-top: -1rem;
+        padding-bottom: 0.5rem;
+        font-size: 0.8rem;
+    }
+
+    /* section deporte -> natacion*/
+    .margin-botton-con-footer{
+        margin-bottom:-160rem;
     }
 }
 

@@ -1,5 +1,7 @@
+//Header and footer 
+
 document.addEventListener("DOMContentLoaded", function() {
-    // Cargo el header desde index.html
+    // Cargo el header y footer desde index.html
     fetch('../index.html')
         .then(response => response.text())
         .then(data => {
@@ -13,3 +15,31 @@ document.addEventListener("DOMContentLoaded", function() {
         });
 });
 
+//-------------------------------------------------------------------------------------
+
+//Contenedor seccion deportes + info
+
+document.addEventListener("DOMContentLoaded", function() {
+    function createMasInfoSection() {
+        return `
+            <div class="mas-info">
+                <h1 class="fuente-principal title-masinfo">+ INFO</h1>
+                <p class="fuente-secundaria font-size-consulte">SEDE SOCIAL:  C. 17 1498, Gonnet, Provincia de Buenos Aires</p>
+            </div>
+        `;
+    }
+
+    function appendSectionToContainers(containerClass) {
+        const containers = document.getElementsByClassName(containerClass);
+        if (containers.length > 0) {
+            for (let i = 0; i < containers.length; i++) {
+                containers[i].innerHTML += createMasInfoSection();
+            }
+        } else {
+            console.error(`Containers with class ${containerClass} not found.`);
+        }
+    }
+
+    // Agrego el contenedor + info
+    appendSectionToContainers('mas-info-container');
+});
