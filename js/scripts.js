@@ -43,3 +43,54 @@ document.addEventListener("DOMContentLoaded", function() {
     // Agrego el contenedor + info
     appendSectionToContainers('mas-info-container');
 });
+
+document.getElementById('clubForm').addEventListener('submit', function(event) {
+    let valid = true;
+
+    const nombre = document.getElementById('nombre');
+    const email = document.getElementById('email');
+    const edad = document.getElementById('edad');
+    const terminos = document.getElementById('terminos');
+
+    const errorNombre = document.getElementById('errorNombre');
+    const errorEmail = document.getElementById('errorEmail');
+    const errorEdad = document.getElementById('errorEdad');
+    const errorTerminos = document.getElementById('errorTerminos');
+
+    // Validación de nombre
+    if (nombre.value.trim() === '') {
+        errorNombre.style.display = 'block';
+        valid = false;
+    } else {
+        errorNombre.style.display = 'none';
+    }
+
+    // Validación de email
+    if (email.value.trim() === '') {
+        errorEmail.style.display = 'block';
+        valid = false;
+    } else {
+        errorEmail.style.display = 'none';
+    }
+
+    // Validación de edad
+    if (edad.value === '') {
+        errorEdad.style.display = 'block';
+        valid = false;
+    } else {
+        errorEdad.style.display = 'none';
+    }
+
+    // Validación de términos y condiciones
+    if (!terminos.checked) {
+        errorTerminos.style.display = 'block';
+        valid = false;
+    } else {
+        errorTerminos.style.display = 'none';
+    }
+
+    // Si no es válido, prevenir el envío del formulario
+    if (!valid) {
+        event.preventDefault();
+    }
+});
