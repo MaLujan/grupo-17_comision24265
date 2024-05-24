@@ -44,36 +44,63 @@ document.addEventListener("DOMContentLoaded", function() {
     appendSectionToContainers('mas-info-container');
 });
 
-document.getElementById('clubForm').addEventListener('submit', function(event) {
+document.getElementById("clubForm").addEventListener("submit", function(event) {
     let valid = true;
 
-    const nombre = document.getElementById('nombre');
-    const email = document.getElementById('email');
-    const edad = document.getElementById('edad');
-    const terminos = document.getElementById('terminos');
+    // Validación del nombre
+    const nombre = document.getElementById("nombre").value;
+    const errorNombre = document.getElementById("errorNombre");
+    const nombreRegex = /^[a-zA-Z\s]+$/;
 
-    const errorNombre = document.getElementById('errorNombre');
-    const errorEmail = document.getElementById('errorEmail');
-    const errorEdad = document.getElementById('errorEdad');
-    const errorTerminos = document.getElementById('errorTerminos');
-
-    // Validación de nombre
-    if (nombre.value.trim() === '') {
-        errorNombre.textContent = 'Por favor, ingrese su nombre.';
-        errorNombre.style.display = 'block';
+    if (!nombre) {
+        errorNombre.textContent = "Este campo es obligatorio.";
+        errorNombre.style.display = "block";
         valid = false;
-    } else if (!/^[a-zA-Z]+$/.test(nombre.value)) {
-        errorNombre.textContent = 'El nombre no puede contener números.';
-        errorNombre.style.display = 'block';
+    } else if (!nombreRegex.test(nombre)) {
+        errorNombre.textContent = "El nombre no puede contener un número.";
+        errorNombre.style.display = "block";
         valid = false;
     } else {
-        errorNombre.style.display = 'none';
+        errorNombre.style.display = "none";
     }
 
-    // Validación de email, edad y términos
-    // (mismo código que antes)
+    // Validación del email
+    const email = document.getElementById("email").value;
+    const errorEmail = document.getElementById("errorEmail");
 
-    // Si no es válido, prevenir el envío del formulario
+    if (!email) {
+        errorEmail.textContent = "Este campo es obligatorio.";
+        errorEmail.style.display = "block";
+        valid = false;
+    } else {
+        errorEmail.style.display = "none";
+    }
+
+    // Validación de la edad
+    const edad = document.getElementById("edad").value;
+    const errorEdad = document.getElementById("errorEdad");
+
+    if (!edad) {
+        errorEdad.textContent = "Este campo es obligatorio.";
+        errorEdad.style.display = "block";
+        valid = false;
+    } else {
+        errorEdad.style.display = "none";
+    }
+
+    // Validación de los términos y condiciones
+    const terminos = document.getElementById("terminos").checked;
+    const errorTerminos = document.getElementById("errorTerminos");
+
+    if (!terminos) {
+        errorTerminos.textContent = "Debe aceptar los términos y condiciones.";
+        errorTerminos.style.display = "block";
+        valid = false;
+    } else {
+        errorTerminos.style.display = "none";
+    }
+
+    // Si algún campo no es válido, prevenir el envío del formulario
     if (!valid) {
         event.preventDefault();
     }
