@@ -43,3 +43,38 @@ document.addEventListener("DOMContentLoaded", function() {
     // Agrego el contenedor + info
     appendSectionToContainers('mas-info-container');
 });
+
+document.getElementById('clubForm').addEventListener('submit', function(event) {
+    let valid = true;
+
+    const nombre = document.getElementById('nombre');
+    const email = document.getElementById('email');
+    const edad = document.getElementById('edad');
+    const terminos = document.getElementById('terminos');
+
+    const errorNombre = document.getElementById('errorNombre');
+    const errorEmail = document.getElementById('errorEmail');
+    const errorEdad = document.getElementById('errorEdad');
+    const errorTerminos = document.getElementById('errorTerminos');
+
+    // Validación de nombre
+    if (nombre.value.trim() === '') {
+        errorNombre.textContent = 'Por favor, ingrese su nombre.';
+        errorNombre.style.display = 'block';
+        valid = false;
+    } else if (!/^[a-zA-Z]+$/.test(nombre.value)) {
+        errorNombre.textContent = 'El nombre no puede contener números.';
+        errorNombre.style.display = 'block';
+        valid = false;
+    } else {
+        errorNombre.style.display = 'none';
+    }
+
+    // Validación de email, edad y términos
+    // (mismo código que antes)
+
+    // Si no es válido, prevenir el envío del formulario
+    if (!valid) {
+        event.preventDefault();
+    }
+});

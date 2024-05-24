@@ -10,7 +10,43 @@
 </head>
 <body>
     <div id="header-placeholder"></div>
-    <main></main>
+    <main>
+        <div class="form-container">
+            <form id="clubForm">
+                <div class="form-group">
+                    <h3>ASOCIATE A NUESTRO CLUB.</h3>
+                </div>
+                <div class="form-group">
+                    <label for="nombre">Nombre:</label>
+                    <input type="text" id="nombre" name="nombre">
+                    <div class="error" id="errorNombre">Este campo es obligatorio.</div>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email">
+                    <div class="error" id="errorEmail">Este campo es obligatorio.</div>
+                </div>
+                <div class="form-group">
+                    <label for="edad">Edad:</label>
+                    <select id="edad" name="edad">
+                        <option value="">Seleccione su edad</option>
+                        <option value="18-25">18-25</option>
+                        <option value="26-35">26-35</option>
+                        <option value="36-45">36-45</option>
+                        <option value="46+">46+</option>
+                    </select>
+                    <div class="error" id="errorEdad">Este campo es obligatorio.</div>
+                </div>
+                <div class="form-group">
+                    <input type="checkbox" id="terminos" name="terminos">
+                    <label for="terminos">Acepto los términos y condiciones</label>
+                    <div class="error" id="errorTerminos">Debe aceptar los términos y condiciones.</div>
+                </div>
+                <button type="submit">Asociarse</button>
+            </form>
+        </div>
+        
+    </main>
     <div id="footer-placeholder"></div>
     <script src="./js/scripts.js"></script>
 </body>
