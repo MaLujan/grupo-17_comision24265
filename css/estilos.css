@@ -84,10 +84,9 @@
     text-align: center;
     color: white;
     padding: 5%;
-    /*
     margin: 5%;
-    margin-top: 50%;
-    margin-bottom: 50%;*/
+    margin-top: 2rem;
+    margin-bottom: 2rem;
     font-weight: 400;
 }
 
@@ -616,7 +615,7 @@ button:hover {
 /* div secciones institucional*/
 .main-header-footer {
     position:relative;
-    margin-bottom: 232rem;
+    margin-bottom: 200rem;
 }
 
 .container {
@@ -662,7 +661,7 @@ button:hover {
     text-align: left;
 }
 
-#bot-leer-mas {
+.bot-leer-mas {
     display: flex;
     white-space: nowrap;
     justify-content: center;
@@ -693,7 +692,8 @@ button:hover {
 
 .seccion-institucional {
     display: block;
-    height: auto
+    height: auto;
+    
 }
 
 
@@ -1001,7 +1001,7 @@ button:hover {
     /* div secciones institucional*/
     .main-header-footer {
         position: relative;
-        margin-bottom: 92rem;
+        margin-bottom: 95rem;
     }
 }
 
@@ -1009,7 +1009,8 @@ button:hover {
 /* Celular */
 @media screen and (max-width: 640px) {
     .form-container {
-        margin-top: 85px;
+        margin-top: 85px; 
+        width: 80%;  
     }
     /* header */
     /* nav */
@@ -1074,7 +1075,7 @@ button:hover {
         transform-origin: left;
         margin-left: -1rem;
         transform: scaleX(1);
-        width: 90%;
+        width: 90%; 
     }
 
     /* Mostrar el menú de navegación cuando el checkbox está marcado */
@@ -1130,7 +1131,7 @@ button:hover {
 
     .rectan {
         margin-top: -6rem;
-
+        
     }
 
     /* Segunda seccion div */
@@ -1161,7 +1162,7 @@ button:hover {
     .galeria-container{
         grid-template-columns: repeat(2, 1fr);
         grid-auto-rows: 160px;
-
+        
         }
 
     .galeria-item{
@@ -1173,7 +1174,8 @@ button:hover {
 
     footer{
         position:absolute;
-        margin-top: 160rem;
+        bottom: 100; 
+        top: 125rem;
     }
 
     /* div principal  */
@@ -1181,7 +1183,7 @@ button:hover {
     .canales-inf{
         font-size: 1.4rem;
         height: 29rem;
-    }
+    }   
 
     /* div principal */
     /* nav - boton - contacto */
@@ -1195,7 +1197,7 @@ button:hover {
     }
 
     /* div secundario  */
-
+  
         /* h2  */
     .font-text-inf{
         padding-bottom: 3%;
@@ -1227,7 +1229,7 @@ button:hover {
     .pie-pagina{
         padding: 3%;
         font-size: 0.9rem;
-
+    
     }
 
         /* -------------------------------------------------------------------------- */
@@ -1255,7 +1257,7 @@ button:hover {
     .intro-deportes{
         margin-top: 8rem;
         padding-left: 6rem;
-        height: 28rem;
+        height: 30rem;
     }
 
 
@@ -1337,6 +1339,7 @@ button:hover {
     .margin-botton-con-footer{
         margin-bottom:-160rem;
     }
+
     /*SECCION INSTITUCIONAL*/
     /* div secciones institucional*/
     .main-header-footer{
@@ -1357,5 +1360,14 @@ button:hover {
     .institucional-titulo {
         font-size: 2rem;
     }
+
+    .subtitle-noticia {
+        font-size: 0.9rem;
+    }
+
+    .info-extra-noticia {
+        font-size: 0.9rem;
+    }
+
 }
 
